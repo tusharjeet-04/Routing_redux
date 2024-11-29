@@ -1,0 +1,233 @@
+/* Navbar.css */
+
+/* Reset styles */
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar container */
+  .navigation{
+    background-color: #4caf50; /* Green background */
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Links */
+  .home-nav{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .home-nav:hover {
+    color: #ffeb3b; /* Yellow hover effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-item {
+      margin: 10px 0;
+    }
+  }
+  
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding:30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-submit:hover {
+  background-color: #0056b3;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 15px;
+  }
+
+  .form-input {
+    font-size: 14px;
+  }
+
+  .form-submit {
+    font-size: 14px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .form-input {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .form-submit {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+/* Student.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .AddStudents {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .AddButton,
+  .addFormButton button,
+  .updateContainer button,
+  .edit-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .AddButton:hover,
+  .addFormButton button:hover,
+  .updateContainer button:hover,
+  .edit-button:hover {
+    background-color: #45a049;
+  }
+  
+  table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  .table-header th {
+    text-align: left;
+    padding: 10px;
+    color: #555;
+  }
+  
+  .studenttable th,
+  .studenttable td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .studenttable tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .studenttable tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .edit-button {
+    background-color: #ffa500;
+  }
+  
+  .edit-button:hover {
+    background-color: #e69500;
+  }
+  
+  .updateContainer {
+    width: 30%;
+    margin: 0 auto 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .updateContainer input {
+    width: 300px;
+    margin: 10px 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .updateContainer {
+      width: 90%;
+    }
+  
+    .updateContainer input {
+      width: calc(100% - 20px);
+    }
+  
+    table {
+      font-size: 14px;
+    }
+  }
+  
