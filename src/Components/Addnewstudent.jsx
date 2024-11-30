@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { Addstudent } from '../App/slice'
 import { nanoid } from '@reduxjs/toolkit'
-import "./student.css"
+import "./Student.css"
 
 const Addnewstudent = () => {
 
