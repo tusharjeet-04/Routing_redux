@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
-import AddnewStudent from "./AddnewStudent";
+import Addnewstudent from "../Components/Addnewstudent"
 import { useDispatch, useSelector } from "react-redux";
 import { editData } from "../App/slice";
 import "./Student.css"
@@ -56,7 +56,7 @@ const Student = () => {
         ) : (
           <>
             <div className="addFormButton">
-              <AddnewStudent />
+              <Addnewstudent />
               <button onClick={() => settoggleadd(true)}>Cancel</button>
             </div>
           </>
